@@ -1,7 +1,6 @@
 package info.nightscout.androidaps.utils;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
@@ -32,8 +31,5 @@ public class ToastUtils {
     }
 
     private static void playSound(final Context ctx, final int soundID) {
-        final MediaPlayer soundMP = MediaPlayer.create(ctx, soundID);
-        soundMP.start();
-        soundMP.setOnCompletionListener(MediaPlayer::release);
     }
 }
